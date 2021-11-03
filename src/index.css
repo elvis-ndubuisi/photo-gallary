@@ -6,9 +6,51 @@
   box-sizing: border-box;
 }
 
+:root {
+  --col-primary: #e63946;
+  --col-secondary: #f1faee;
+  --col-accent: #a8dadc;
+  --col-accent2: #457b9d;
+  --col-text: #1d3557;
+  --colr-error: red;
+}
+
 html,
 body {
-  background-color: rgb(255, 242, 249);
+  background-color: var(--col-secondary);
   font-family: "Poppins", sans-serif;
   font-size: 14px;
+}
+
+h1 {
+  margin: 0 0.4em;
+  text-transform: uppercase;
+}
+
+p,
+h2 {
+  margin: 0.4em;
+  text-transform: capitalize;
+  color: var(--col-text);
+}
+
+.App {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 1em 0 0;
+  text-align: center;
+}
+.title div:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.title h1 {
+  color: var(--col-accent2);
+}
+.title h2 {
+  font-size: 2.3rem;
 }
