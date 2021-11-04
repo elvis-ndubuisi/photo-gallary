@@ -1,7 +1,8 @@
 import { initializeApp } from "firebase/app";
-import { getDatabase } from "firebase/database";
+import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCv4JXAOS6ucYb9rRr0X-0VeXZJR2WUXJc",
   authDomain: "photogallary-react.firebaseapp.com",
@@ -13,7 +14,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const database = getDatabase(app);
+const database = getFirestore(app);
 const storage = getStorage(app);
 
 export { database, storage };
