@@ -54,3 +54,21 @@ h2 {
 .title h2 {
   font-size: 2.3rem;
 }
+
+.output {
+  height: 60px;
+  font-size: 0.8rem;
+}
+
+.error {
+  color: var(--colr-error);
+}
+
+/* progress bar style */
+.progress-bar {
+  height: 5px;
+  background-color: var(--col-primary);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}

@@ -1,7 +1,8 @@
 import { getDownloadURL, uploadBytesResumable } from "@firebase/storage";
 import { useState, useEffect } from "react";
-import { storage } from "../firebase/config";
+import { storage, database } from "../firebase/config";
 import { ref } from "firebase/storage";
+import { Timestamp, collection, addDoc } from "firebase/firestore";
 
 const useStorage = (file) => {
   const [progress, setProgress] = useState(0);
@@ -26,6 +27,16 @@ const useStorage = (file) => {
         // Get Url of uploaded image
         getDownloadURL(storageRef).then((url) => {
           setUrl(url);
+
+          try {
+            // save image url to firebase database
+            addDoc(collection(database, "images"), {
+              url: url,
+              createdAt: Timestamp.now(),
+            });
+          } catch (error) {
+            console.log(error);
+          }
         });
       }
     );
