@@ -111,13 +111,14 @@ h2 {
   height: 100%;
   background-color: var(--col-backdrop);
   z-index: 2;
+  display: grid;
+  place-items: center;
 }
 .backdrop img {
   display: block;
   max-width: 60%;
   max-height: 80%;
   margin: 1em auto;
-  transform: translate(0, 20%);
   box-shadow: 3px 2px 5px #000;
   border: solid 2px var(--col-accent2);
   border-radius: 10px;
