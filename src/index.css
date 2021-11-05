@@ -72,3 +72,28 @@ h2 {
   overflow: hidden;
   margin-top: 20px;
 }
+
+/* imageGrid */
+.image-grid {
+  margin: 1em auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+.image-wrap {
+  overflow: hidden;
+  height: 0;
+  padding: 50% 0;
+  /* padding controls height, will always be perfectly squared regardless of width. */
+  position: relative;
+  opacity: 0.8;
+}
+.image-wrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 50%;
+  object-fit: cover;
+  max-width: 150%;
+}
