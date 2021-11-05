@@ -56,7 +56,7 @@ h2 {
 }
 
 .output {
-  height: 60px;
+  height: 20px;
   font-size: 0.8rem;
 }
 
@@ -87,6 +87,10 @@ h2 {
   /* padding controls height, will always be perfectly squared regardless of width. */
   position: relative;
   opacity: 0.8;
+}
+.image-wrap:hover {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
 .image-wrap img {
   position: absolute;
