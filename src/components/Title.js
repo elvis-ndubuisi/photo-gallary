@@ -9,7 +9,7 @@ export const Title = () => {
       </div>
 
       <h2>uploaded photos</h2>
-      <p>some text goes here.</p>
+      <p>photoGallary built with ReactJs and firebasev9</p>
     </div>
   );
 };
