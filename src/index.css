@@ -9,9 +9,9 @@
 :root {
   --col-primary: #e63946;
   --col-secondary: #f1faee;
-  --col-accent: #a8dadc;
   --col-accent2: #457b9d;
   --col-text: #1d3557;
+  --col-backdrop: #1d35575d;
   --colr-error: red;
 }
 
@@ -96,4 +96,25 @@ h2 {
   min-height: 50%;
   object-fit: cover;
   max-width: 150%;
+}
+
+/* model display */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--col-backdrop);
+  z-index: 2;
+}
+.backdrop img {
+  display: block;
+  max-width: 60%;
+  max-height: 80%;
+  margin: 1em auto;
+  transform: translate(0, 20%);
+  box-shadow: 3px 2px 5px #000;
+  border: solid 2px var(--col-accent2);
+  border-radius: 10px;
 }
