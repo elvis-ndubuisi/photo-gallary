@@ -37,12 +37,9 @@ h2 {
 form {
   display: grid;
   place-items: center;
+  padding-bottom: 1em;
 }
-/* input[type="file"]::-webkit-file-upload-button,
-input[type="file"]::-moz-file-upload-button,
-input[type="file"]::-ms-file-upload-button {
-  visibility: hidden;
-} */
+
 input[type="file"]:placeholder {
   display: none;
 }
@@ -100,8 +97,11 @@ input[type="file"]::-webkit-file-upload-button {
 .image-grid {
   margin: 1em auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1em;
+  align-items: center;
+  padding: 0 1em;
 }
 .image-wrap {
   overflow: hidden;
@@ -133,8 +133,6 @@ input[type="file"]::-webkit-file-upload-button {
   height: 100%;
   background-color: var(--col-backdrop);
   z-index: 2;
-  display: grid;
-  place-items: center;
 }
 .backdrop img {
   display: block;
@@ -144,4 +142,14 @@ input[type="file"]::-webkit-file-upload-button {
   box-shadow: 3px 2px 5px #000;
   border: solid 2px var(--col-accent2);
   border-radius: 10px;
+}
+@media screen and (max-width: 800px) {
+  .backdrop {
+    display: grid;
+    align-items: center;
+  }
+  .backdrop img {
+    max-width: 100%;
+    max-height: 80%;
+  }
 }
