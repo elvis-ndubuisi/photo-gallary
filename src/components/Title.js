@@ -5,7 +5,7 @@ export const Title = () => {
     <div className="title">
       <div>
         <img src={logo} alt="logo" />
-        <h1>photogallary</h1>
+        <h1>showView gallery</h1>
       </div>
 
       <h2>uploaded photos</h2>
