@@ -1,9 +1,9 @@
 import React from "react";
 
-export const Modal = () => {
+export const Modal = ({ selectedImg }) => {
   return (
     <div className="backdrop">
-      <img src=" " alt=" enlarged display " />
+      <img src={selectedImg} alt=" enlarged display " />
     </div>
   );
 };
