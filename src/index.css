@@ -34,6 +34,29 @@ h2 {
   color: var(--col-text);
 }
 
+form {
+  display: grid;
+  place-items: center;
+}
+/* input[type="file"]::-webkit-file-upload-button,
+input[type="file"]::-moz-file-upload-button,
+input[type="file"]::-ms-file-upload-button {
+  visibility: hidden;
+} */
+input[type="file"]:placeholder {
+  display: none;
+}
+input[type="file"]::-webkit-file-upload-button {
+  background-color: var(--col-primary);
+  outline: 0;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  padding: 0.6em 1em;
+  cursor: pointer;
+}
+
 .App {
   max-width: 960px;
   margin: 0 auto;
@@ -98,7 +121,6 @@ h2 {
   left: 0;
   min-width: 100%;
   min-height: 50%;
-  object-fit: cover;
   max-width: 150%;
 }
 
