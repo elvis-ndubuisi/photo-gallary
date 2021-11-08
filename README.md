@@ -1,6 +1,6 @@
-[live site](https://showview.netlify.app/)
+**[:earth_africa: Live Site](https://showview.netlify.app/)**
 
-![showcase]("./Screenshot from 2021-11-05 15-08-13.jpg")
+![showcase](./showview.jpg)
 
 ## ShowView photoGallery
 
