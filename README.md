@@ -1,6 +1,6 @@
 [live site](https://showview.netlify.app/)
 
-[showcase]("./Screenshot from 2021-11-05 15-08-13.jpg")
+![showcase]("./Screenshot from 2021-11-05 15-08-13.jpg")
 
 ## ShowView photoGallery
 
